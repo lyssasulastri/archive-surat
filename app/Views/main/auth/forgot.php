@@ -24,7 +24,6 @@
 </head>
 
 <body class="bg-gradient-primary">
-
    <div class="container">
 
       <!-- Outer Row -->
