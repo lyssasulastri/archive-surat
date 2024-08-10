@@ -14,7 +14,7 @@
             id="kt_login_signin_form_singup_button">Buat Akun</a>
       </div>
    </div>
-   <!--begin::Title-->
+   <!-- begin::Title -->
 
    <!--begin::message-->
    <?= view('Myth\Auth\Views\_message_block') ?>
