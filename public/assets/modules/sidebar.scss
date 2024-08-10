@@ -1,0 +1,183 @@
+@import 'variabel.scss';
+@import 'mixin.scss';
+
+.sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    background: $light-background;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+
+    & i.bx-x {
+        @include breakpoint-mobile('landscape') {
+            display: block;
+        }
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        right: 0;
+        font-size: 30px;
+
+        &:hover {
+            background: $light-typical-color;
+            border-radius: 50%;
+        }
+    }
+
+    @include breakpoint-mobile('landscape') {
+        z-index: 90;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+
+    &.show{
+        z-index: 90;
+        transform: translateX(0);
+    }
+
+    & .top-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-styles-02;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 205px;
+        background: $light-background;
+        border-right: 1px solid $light-border-color;
+
+       
+        color: $light-title-color ;
+        & .title{
+            color: $light-text-color;
+            font-size: 20px;
+            font-family: $font-styles-01;
+            font-weight: 600;
+        }
+
+        & .description {
+            color: $light-text-color;
+            font-size: 15px;
+            font-family: $font-styles-01;
+        }
+    }
+
+    & .bottom-menu{
+        position: fixed;
+        top: 205px;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background: $light-background;
+        padding: 10px;
+        font-family: $font-styles-02;
+        overflow: scroll;
+        scrollbar-width: thin;  
+        border-right: 1px solid $light-border-color;
+
+ 
+        &::-webkit-scrollbar{
+            width: 8px;
+        }
+    
+        & .tag {
+            color: $light-title-color;
+            padding: 4px 20px;
+            font-weight: 600;
+        }
+    
+        & ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+    
+            &.wrapper{
+                margin-bottom: 10px;
+            }
+    
+            & li {
+                display: block;
+                height: auto;
+                & a {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    color: $light-text-color;
+                    margin-bottom: 10px;
+    
+                    & i {
+                        font-size: 15px;
+                        & span {
+                            margin-left: 5px;
+                            font-family: $font-styles-02;
+                        }
+                    }
+
+                    & .notif{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    
+                        & span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: $light-typical-color;
+                            width: 17px;
+                            height: auto;
+                            font-size: 12px;
+                            color: white;
+                        }
+                    }
+    
+                    &.active {
+                        background: $light-typical-ligth-color;
+                        color: $light-typical-color;
+                        font-weight: 600;
+                     
+                    }
+    
+                    &:hover {
+                        background: $light-typical-ligth-color;
+                    }
+                }
+    
+                & .content{
+                    margin-left: 25px;
+                    padding: 0px 0px 0px 10px;
+                    display: none;
+                    height: 0;
+                    transition: all 0.3s;
+    
+                    &.show {
+                        display: block;
+                        height: auto;
+                    }
+    
+                    & li {
+                        & a {
+                            padding: 10px 4px;
+                            & .arrow{
+                                width: 31px;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+
+}

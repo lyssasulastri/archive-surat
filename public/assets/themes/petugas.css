@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.wrapper-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 300px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wrapper-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.wrapper-card .header .title-header {
+  display: flex;
+  align-items: center;
+}
+.wrapper-card .header .title-header i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.wrapper-card .header .dropstart i {
+  font-size: 20px;
+}
+.wrapper-card .body {
+  overflow: auto;
+}
+.wrapper-card .body table.petugas {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.wrapper-card .body table.petugas th, .wrapper-card .body table.petugas td {
+  padding: 12px;
+  border: 1px solid #cbd0dd;
+}
+.wrapper-card .body table.petugas th {
+  font-weight: bold;
+  vertical-align: middle;
+}
+.wrapper-card .body table.petugas th i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.wrapper-card .body table.petugas td .profile img {
+  width: 40px;
+}

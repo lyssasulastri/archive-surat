@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.wrapper-jenis {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "Boogaloo", cursive;
+  color: #707070;
+}
+.wrapper-jenis .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  z-index: 11;
+}
+.wrapper-jenis .header .title {
+  display: flex;
+  align-items: center;
+}
+.wrapper-jenis .header .title i {
+  margin-right: 5px;
+  font-size: 25px;
+}
+.wrapper-jenis .header .widget {
+  position: relative;
+}
+.wrapper-jenis .header .widget i {
+  font-size: 25px;
+}
+.wrapper-jenis .header .widget i:hover {
+  border-radius: 10%;
+  background: #695CFE;
+  color: white;
+}
+.wrapper-jenis .body {
+  position: relative;
+  background: #fff;
+  height: 300px;
+  overflow-y: scroll;
+}
+.wrapper-jenis .body table {
+  color: #707070;
+}
+.wrapper-jenis .body table thead {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.wrapper-jenis .body table thead th {
+  vertical-align: middle;
+}
+.wrapper-jenis .body table thead th .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.wrapper-jenis .body table thead th .content i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.wrapper-jenis .body table tbody {
+  color: #707070;
+  overflow-y: scroll !important;
+}
+.wrapper-jenis .body table tbody td {
+  vertical-align: middle;
+}
+.wrapper-jenis .body table tbody td .badge {
+  font-size: 15px;
+}

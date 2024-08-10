@@ -1,0 +1,71 @@
+
+@import "variabel.scss";
+@import "mixin.scss";
+
+
+.wrapper-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 300px;
+    background: $light-background;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    & .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-family: $font-styles-01;
+        color: $light-text-color;
+
+        & .title-header {
+            display: flex;
+            align-items: center;
+
+            & i {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+
+        & .dropstart {
+            & i {
+                font-size: 20px;
+            }
+        }
+    } 
+
+
+    & .body {
+        overflow: auto;
+        & table.petugas {
+            width: 100%;
+            font-family: $font-styles-01;
+            color: $light-text-color;
+
+            & th,td {
+                padding: 12px;
+                border: 1px solid $light-border-color;
+            }
+
+            & th {
+                font-weight: bold;
+                vertical-align: middle;
+                & i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+            & td {
+                & .profile {
+                    & img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+}

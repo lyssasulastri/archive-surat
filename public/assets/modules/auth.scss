@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+.bg-dumai_berkhidmat {
+  background: #4e73df;
+}
+
+.btn-dumai_berkhidmat {
+  background: #f5b929;
+  width: 100%;
+}
+
+.yellow-dumai_berkhidmat {
+  background: #f5b929;
+}
+
+.yellow-ligth-dumai_berkhidmat {
+  background: #fff4da;
+}
+
+.text-dumai-berkhidmat {
+  color: #f5b929;
+}
+.text-dumai-berkhidmat:hover {
+  color: black;
+}
+
+.shadow-dumai-berkhidmat {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+}
+
+.dumai-berkhidmat-body {
+  font-family: "Oswald", sans-serif;
+}
+
+@media screen and (min-width: 1920px) {
+  .img-ilustration-dumai-berkhidmat {
+    min-height: 500px !important;
+    background-image: url("/assets/canvases/vector/auth2.png") !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .img-ilustration-dumai-berkhidmat {
+    min-height: 150px !important;
+    background-image: url("/assets/canvases/vector/auth3.png") !important;
+  }
+}

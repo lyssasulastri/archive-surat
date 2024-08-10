@@ -1,0 +1,79 @@
+// Variabel Color
+// Themes Light
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+// Breakpoint
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+
+$light-body-color: #E4E9F7;
+$light-background: #fff;
+$light-background-2: #e9e6e6;
+$light-typical-color: #695CFE;
+$light-typical-ligth-color: #F6F5FF;
+$light-typical-transparant-color: #d9d6ff;
+$light-title-color: #312c2c;
+$light-text-color: #707070;
+$light-tag-color: #505050;
+$light-text-title-color: #fff;
+$light-text-subtitle-color: #17115e;
+$light-icon-color: #17115e;
+$light-active-color: #E6E4FF;
+$light-button-color: #DDD;
+$light-border-color: #cbd0dd;
+$light-profile-card-color: #F6F5FF;
+$light-profile-card-profesi-color: #b1b1b1;
+
+// themes Dark
+$dark-body-color: #18191A;
+$dark-background: #18191A;
+$dark-typical-color:  #3A3B3C;
+$dark-text-color: #CCC;
+$dark-text-title-color: #b7b7b7;
+$dark-text-subtitle-color: #040404;
+$dark-icon-color: #040404;
+$dark-active-color: #E6E4FF;
+$dark-button-color: #FFF;
+$dark-border-color: #261e1e;
+
+
+// Transition 
+$tran-02: all 0.2s ease;
+$tran-03: all 0.3s ease;
+$tran-04: all 0.4s ease;
+$tran-05: all 0.5s ease;
+
+
+// Variabel Width
+$default-height: 64px;
+$aritmatika-height: $default-height + $default-height;
+
+
+// Font Styles
+$font-styles-01: 'Oswald', sans-serif;
+$font-styles-02: 'Boogaloo', cursive;
+$font-styles-03: 'Bebas Neue', cursive;
+$font-styles-04: 'Roboto', sans-serif;
+$font-styles-05: 'Poppins', sans-serif;
+
+
+// Breakpoint
+$breakpoints-mobile: (
+  'small': 320px,
+  'medium': 480px,
+  'landscape': 768px,
+  'large': 980px,
+  'custom': 1020px,
+);
+
+$breakpoint-desktop: (
+    'small': 1024px,
+    'medium': 1200px,
+    'large': 1440px,
+);

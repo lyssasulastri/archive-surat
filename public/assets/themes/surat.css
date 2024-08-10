@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+tbody tr {
+  font-family: "Boogaloo", cursive;
+  border-style: none;
+  border-bottom: 1px solid #cbd0dd;
+  padding: 10px;
+}
+tbody tr.no_read {
+  background: #e9e6e6;
+}
+tbody tr.no_read:hover {
+  background: #fff;
+}
+tbody tr td.infoprofile {
+  max-width: 150px;
+}
+tbody tr td input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+tbody tr td .profile {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+tbody tr td .profile img {
+  margin-right: 10px;
+}
+tbody tr td.message {
+  max-width: 400px;
+}
+tbody tr td.message .document {
+  min-width: 200px;
+}
+tbody tr td.message .document .badge {
+  font-weight: 600;
+  font-size: 12px;
+  background: #695CFE;
+}
+tbody tr td.message .document .badge:hover {
+  background: #fff;
+  color: black;
+  border: 1px solid black;
+}
+tbody tr td.type {
+  max-width: 150px;
+}
+tbody tr td.date {
+  max-width: 150px;
+}

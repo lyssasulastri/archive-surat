@@ -1,0 +1,197 @@
+@import "variabel.scss";
+@import "mixin.scss";
+
+.kotak {
+
+    height: 200px !important;
+
+    @include breakpoint-mobile('custom') {
+        height: auto !important;
+    }
+
+    .folder-analisis{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+    
+        @include breakpoint-mobile('custom') {
+            flex-direction: column;
+            height: 45rem;
+        }
+    
+        & .box-wrapper{
+            height: 140px;
+            width: 170px;
+            display: inline-block;
+            position: relative;
+    
+            & .header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90px;
+                height: 13%;
+                border-top-left-radius: 10px;
+                z-index: 2;
+                background: white;
+         
+            }
+    
+            & .triangle{
+                position: absolute;
+                content: "";
+                top: 1px;
+                right: 75px;
+                height: 18px;
+                background: red;
+                width: 10px;
+                transform: skewX(20deg);
+                background-color: white;
+                z-index: 0;
+            }
+            & .body {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 88%;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background: white;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            
+                & .content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+    
+                    & .bagian1{
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+    
+                        & i {
+                            position: absolute;
+                            font-size: 60px;
+                            left: 0;
+                            top: 5%;
+                            color: $light-text-color;
+                        }
+    
+                        & .text{
+                            font-family: $font-styles-02;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            font-size: 13px;
+                        }
+                    }   
+                    & .bagian2{
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+    
+                        & .total {
+                            position: absolute;
+                            font-size: 30px;
+                            left: 17%;
+                            top: 17%;
+                            color: $light-text-color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        
+    
+    }
+}
+
+
+.line-horizontal{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    top: -150px;
+
+    @include breakpoint-mobile('custom') {
+        display: none;
+    }
+
+    & .box {
+        height: 140px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        & .line {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            height: 3px;
+            background: $light-border-color;
+
+            // & .kotak {
+            //     font-family: $font-styles-02;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     flex-direction: column;
+            //     position: absolute;
+            //     right: -31px;
+            //     top: -37px;
+
+            //     & i {
+            //         margin-bottom: 30px;
+            //         font-size: 20px;
+            //     }
+            // }
+
+            & i.x-center {
+                position: absolute;
+                top: -6px;
+                right: -21px;
+            }
+
+            & i.x-left{
+                position: absolute;
+                top: -7px;
+                left: -5px;
+            }
+
+            & i.x-right{
+                position: absolute;
+                top: -7px;
+                right: -5px;
+            }
+        }
+    }
+
+    & .box-center{
+        font-family: $font-styles-02;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & i.icon-atas {
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+

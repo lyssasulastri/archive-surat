@@ -1,0 +1,58 @@
+@mixin breakpoint-mobile($point) {
+    @if map-has-key($breakpoints-mobile, $point) {
+      @media screen and (max-width: map-get($breakpoints-mobile, $point)) {
+        @content;
+      }
+    }
+    @else {
+      @error 'Breakpoint #{$point} not found in $breakpoints-mobile.';
+    }
+}
+
+@mixin arrow-popper($content-id,$arrow-id){
+    ##{$content-id} {
+        display: none;
+    }
+      
+    ##{$content-id}[data-show] {
+        display: block;
+    }
+
+    ##{$arrow-id},
+    ##{$arrow-id}::before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: inherit;
+        border-top: 1px solid $light-border-color;
+        border-left: 1px solid $light-border-color;
+        bottom: 1px;
+    }
+  
+    ##{$arrow-id} {
+      visibility: hidden;
+
+  
+      &::before {
+        visibility: visible;
+        content: '';
+        transform: rotate(45deg);
+
+      }
+    }
+    ##{$content-id}[data-popper-placement^='top'] >    ##{$arrow-id} {
+        bottom: -4px;
+      }
+      
+    ##{$content-id}[data-popper-placement^='bottom'] > ##{$arrow-id} {
+        top: -4px;
+    }
+    
+    ##{$content-id}[data-popper-placement^='left'] >   ##{$arrow-id} {
+        right: -4px;
+    }
+    
+    ##{$content-id}[data-popper-placement^='right'] >      ##{$arrow-id} {
+        left: -4px;
+    }
+}

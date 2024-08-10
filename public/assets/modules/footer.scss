@@ -1,0 +1,29 @@
+@import "variabel.scss";
+@import "mixin.scss";
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    height: 64px;
+    background: $light-background;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top: 1px solid $light-border-color;
+    padding: 10px;
+
+    @include breakpoint-mobile('landscape') {
+        width: 100%;
+    }
+
+    & .add {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-family: $font-styles-01;
+        color: $light-text-color;
+    }
+}

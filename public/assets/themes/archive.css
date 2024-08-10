@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.wrapper-archive {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 300px;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.wrapper-archive .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index: 11;
+}
+.wrapper-archive .header .title {
+  display: flex;
+  align-items: center;
+}
+.wrapper-archive .header .title .box-search {
+  display: flex;
+}
+.wrapper-archive .header .title .box-search .input-searching-surat {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrapper-archive .header .title i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.wrapper-archive .header .widget {
+  position: relative;
+}
+.wrapper-archive .body {
+  overflow: auto;
+  background: #fff;
+}
+.wrapper-archive .body table {
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}

@@ -1,0 +1,10 @@
+.wrapper-preview {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.wrapper-preview img {
+  max-height: 300px;
+}

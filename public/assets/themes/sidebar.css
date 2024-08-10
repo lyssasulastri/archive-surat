@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.sidebar {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 100;
+}
+.sidebar i.bx-x {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  right: 0;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar i.bx-x {
+    display: block;
+  }
+}
+.sidebar i.bx-x:hover {
+  background: #695CFE;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    z-index: 90;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+  }
+}
+.sidebar.show {
+  z-index: 90;
+  transform: translateX(0);
+}
+.sidebar .top-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Boogaloo", cursive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 205px;
+  background: #fff;
+  border-right: 1px solid #cbd0dd;
+  color: #312c2c;
+}
+.sidebar .top-menu .title {
+  color: #707070;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.sidebar .top-menu .description {
+  color: #707070;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
+.sidebar .bottom-menu {
+  position: fixed;
+  top: 205px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  padding: 10px;
+  font-family: "Boogaloo", cursive;
+  overflow: scroll;
+  scrollbar-width: thin;
+  border-right: 1px solid #cbd0dd;
+}
+.sidebar .bottom-menu::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar .bottom-menu .tag {
+  color: #312c2c;
+  padding: 4px 20px;
+  font-weight: 600;
+}
+.sidebar .bottom-menu ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.sidebar .bottom-menu ul.wrapper {
+  margin-bottom: 10px;
+}
+.sidebar .bottom-menu ul li {
+  display: block;
+  height: auto;
+}
+.sidebar .bottom-menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #707070;
+  margin-bottom: 10px;
+}
+.sidebar .bottom-menu ul li a i {
+  font-size: 15px;
+}
+.sidebar .bottom-menu ul li a i span {
+  margin-left: 5px;
+  font-family: "Boogaloo", cursive;
+}
+.sidebar .bottom-menu ul li a .notif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .bottom-menu ul li a .notif span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #695CFE;
+  width: 17px;
+  height: auto;
+  font-size: 12px;
+  color: white;
+}
+.sidebar .bottom-menu ul li a.active {
+  background: #F6F5FF;
+  color: #695CFE;
+  font-weight: 600;
+}
+.sidebar .bottom-menu ul li a:hover {
+  background: #F6F5FF;
+}
+.sidebar .bottom-menu ul li .content {
+  margin-left: 25px;
+  padding: 0px 0px 0px 10px;
+  display: none;
+  height: 0;
+  transition: all 0.3s;
+}
+.sidebar .bottom-menu ul li .content.show {
+  display: block;
+  height: auto;
+}
+.sidebar .bottom-menu ul li .content li a {
+  padding: 10px 4px;
+}
+.sidebar .bottom-menu ul li .content li a .arrow {
+  width: 31px;
+}

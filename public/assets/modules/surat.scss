@@ -1,0 +1,71 @@
+
+@import "variabel.scss";
+@import "mixin.scss";
+
+
+
+tbody {
+    & tr {
+        font-family: $font-styles-02;
+        border-style: none;
+        border-bottom: 1px solid $light-border-color;
+        padding: 10px;
+
+        &.no_read {
+            background: $light-background-2;
+            &:hover {
+                background: $light-background;
+                
+            }
+        }
+
+   
+        & td {
+
+            &.infoprofile {
+                max-width: 150px;
+            }
+            input {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            & .profile {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                & img {
+                    margin-right: 10px;
+                }
+            }
+    
+            &.message {
+                max-width: 400px;
+                & .document {
+                    min-width: 200px;
+                    & .badge {
+                        font-weight: 600;
+                        font-size: 12px;
+                        background: $light-typical-color;
+
+                        &:hover {
+                            background: $light-background;
+                            color: black;
+                            border: 1px solid black;
+                        }
+                    }
+                }
+            }
+
+            &.type {
+                max-width: 150px;
+            }
+
+            &.date {
+                max-width: 150px;
+            }
+        }
+    }
+
+
+
+}

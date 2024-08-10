@@ -1,0 +1,89 @@
+@import "variabel.scss";
+@import "mixin.scss";
+
+
+
+.wrapper-jenis {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: $font-styles-02;
+    color: $light-text-color;
+
+    & .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $light-background;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        z-index: 11;
+        
+        
+        & .title {
+            display: flex;
+            align-items: center;
+            i {
+                margin-right: 5px;
+                font-size: 25px;
+            }
+        }
+
+        & .widget{
+            position: relative;
+
+            & i {
+                font-size: 25px;
+
+                &:hover {
+                    border-radius: 10%;
+                    background: $light-typical-color;
+                    color: white;
+                }
+            }
+
+          
+        }
+    }
+
+    & .body {
+        position: relative;
+        background: $light-background;
+        height: 300px;
+        overflow-y: scroll;
+        & table {
+            color: $light-text-color;
+            & thead {
+                height: 60px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                & th {
+                    vertical-align: middle;
+                    & .content {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+
+                        & i {
+                            font-size: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            & tbody {
+                color: $light-text-color;
+                overflow-y: scroll !important;
+                & td {
+                    vertical-align: middle;
+                    & .badge {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,41 @@
+.content-viewpdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.content-viewpdf .content-modal-header {
+  width: 400px;
+  height: 50px;
+  background: rgb(155, 155, 155);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  color: white;
+}
+.content-viewpdf .content-modal-header .inputlength-pagepdf {
+  width: 30px;
+}
+.content-viewpdf .content-modal-body {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: rgb(163, 163, 163);
+  margin-bottom: 20px;
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 1px solid black;
+}
+.content-viewpdf .content-modal-body .content-loading {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 250px);
+  height: 64px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top: 1px solid #cbd0dd;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+}
+footer .add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}

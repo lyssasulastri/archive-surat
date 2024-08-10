@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.head .nav-item {
+  display: flex;
+  margin: 10px 10px 0 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head .chart {
+  width: 25%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head .chart .surat-masuk {
+  width: 40px;
+  height: 15px;
+  border: 1px solid #4e73df;
+}
+
+.head .chart .surat-keluar {
+  width: 40px;
+  height: 15px;
+  border: 1px solid #ff0000;
+}
+
+.head .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .button a {
+  background: #cbd0dd;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.head .button a:hover {
+  background: #ececec;
+  transition: 0.2s;
+}
+
+.head input {
+  padding: 5px;
+  width: 30%;
+  height: 40%;
+}
+
+@media print {
+  
+}
+
+
+/** card 1 */
+.card {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+.card .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #f6f5ff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  z-index: 10;
+  padding: 10px;
+}
+.card .header .title {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+.card .header .title i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card .header .widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 100%;
+}
+.card .header .widget:hover {
+  background: #695CFE;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card .header .widget i {
+  font-size: 25px;
+}
+.card .header .widget .dropdown-menu {
+  font-family: "Oswald", sans-serif;
+  z-index: 100;
+}
+.card .header .tabs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+.card .body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.card .body canvas {
+  width: 100% !important;
+  height: auto;
+}
+.card .body canvas#myChart {
+  height: auto !important;
+}
+.card .body table {
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card .body table thead {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card .body table thead th {
+  vertical-align: middle;
+}
+.card .body table thead th .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.card .body table thead th .content i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card .body table tbody {
+  color: #707070;
+  overflow-y: scroll !important;
+}
+.card .body table tbody td {
+  vertical-align: middle;
+}
+.card .body table tbody td .badge {
+  font-size: 15px;
+}
+.card .body-custom {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  overflow: auto;
+}
+.card .body-custom table {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card .body-custom table thead {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card .body-custom table thead th {
+  padding: 10px;
+  vertical-align: middle;
+}
+.card .body-custom table thead th input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .body-custom table thead th .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.card .body-custom table thead th .content i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card .body-custom table tbody {
+  color: #707070;
+}
+.card .body-custom table tbody td {
+  padding: 10px;
+  vertical-align: middle;
+}
+.card .body-custom table tbody td .badge {
+  font-size: 15px;
+}
+.card .body-custom .recent {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px 10px 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.card .body-custom .recent ul {
+  margin: 0;
+  padding: 0;
+}
+.card .body-custom .recent ul li {
+  list-style: none;
+  height: 50px;
+  width: 100%;
+}
+.card .body-custom .recent ul li .content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card .body-custom .recent ul li .content .date {
+  width: 90px;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: #707070;
+}
+@media screen and (max-width: 768px) {
+  .card .body-custom .recent ul li .content .date {
+    display: none;
+  }
+}
+.card .body-custom .recent ul li .content .line-icon {
+  position: relative;
+  width: 2px;
+  height: 100%;
+  background: #cbd0dd;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.card .body-custom .recent ul li .content .line-icon .round {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: #d9d9fb;
+  border-radius: 50%;
+  top: 14px;
+  right: -11px;
+}
+.card .body-custom .recent ul li .content .info {
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card .body-custom .recent ul li .content .info .title {
+  font-weight: 600;
+}
+.card .body-custom .user {
+  color: #707070;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px 10px 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.card .body-custom .user ul {
+  margin: 0;
+  padding: 0;
+}
+.card .body-custom .user ul li {
+  list-style: none;
+  width: 100%;
+  height: 65px;
+}
+.card .body-custom .user ul li .content {
+  display: flex;
+  align-items: center;
+}
+.card .body-custom .user ul li .content img {
+  margin-right: 10px;
+}
+.card .body-custom .user ul li .content .profile {
+  font-family: "Oswald", sans-serif;
+}
+.card .body-custom .user ul li .content .profile .name {
+  font-weight: 600;
+}
+.card .body-custom .user ul li .content .profile .type {
+  font-size: 13px;
+}
+.card .footer {
+  font-family: "Boogaloo", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background: #f6f5ff;
+  height: 80px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (max-width: 768px) {
+  .card .footer {
+    flex-direction: column;
+  }
+}
+.card .footer .number_count {
+  color: #707070;
+}
+.card .footer .pagination nav ul {
+  margin-bottom: 0;
+}
+.card .footer .pagination nav ul a {
+  color: #695CFE;
+}
+
+
+
+
+
+/** card 2 */
+/* .card2 {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+.card2 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #f6f5ff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  z-index: 10;
+  padding: 10px;
+}
+.card2 .header .title {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+.card2 .header .title i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card2 .header .widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 100%;
+}
+.card2 .header .widget:hover {
+  background: #695CFE;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card2 .header .widget i {
+  font-size: 25px;
+}
+.card2 .header .widget .dropdown-menu {
+  font-family: "Oswald", sans-serif;
+  z-index: 100;
+}
+.card2 .header .tabs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+.card2 .body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.card2 .body canvas {
+  width: 100% !important;
+  height: auto;
+}
+.card2 .body canvas#myChart {
+  height: auto !important;
+}
+.card2 .body table {
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card2 .body table thead {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card2 .body table thead th {
+  vertical-align: middle;
+}
+.card2 .body table thead th .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.card2 .body table thead th .content i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card2 .body table tbody {
+  color: #707070;
+  overflow-y: scroll !important;
+}
+.card2 .body table tbody td {
+  vertical-align: middle;
+}
+.card2 .body table tbody td .badge {
+  font-size: 15px;
+}
+.card2 .body-custom {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  overflow: auto;
+}
+.card2 .body-custom table {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card2 .body-custom table thead {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card2 .body-custom table thead th {
+  padding: 10px;
+  vertical-align: middle;
+}
+.card2 .body-custom table thead th input {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card2 .body-custom table thead th .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.card2 .body-custom table thead th .content i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.card2 .body-custom table tbody {
+  color: #707070;
+}
+.card2 .body-custom table tbody td {
+  padding: 10px;
+  vertical-align: middle;
+}
+.card2 .body-custom table tbody td .badge {
+  font-size: 15px;
+}
+.card2 .body-custom .recent {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px 10px 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.card2 .body-custom .recent ul {
+  margin: 0;
+  padding: 0;
+}
+.card2 .body-custom .recent ul li {
+  list-style: none;
+  height: 50px;
+  width: 100%;
+}
+.card2 .body-custom .recent ul li .content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card2 .body-custom .recent ul li .content .date {
+  width: 90px;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: #707070;
+}
+@media screen and (max-width: 768px) {
+  .card2 .body-custom .recent ul li .content .date {
+    display: none;
+  }
+}
+.card2 .body-custom .recent ul li .content .line-icon {
+  position: relative;
+  width: 2px;
+  height: 100%;
+  background: #cbd0dd;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.card2 .body-custom .recent ul li .content .line-icon .round {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: #d9d9fb;
+  border-radius: 50%;
+  top: 14px;
+  right: -11px;
+}
+.card2 .body-custom .recent ul li .content .info {
+  font-family: "Oswald", sans-serif;
+  color: #707070;
+}
+.card2 .body-custom .recent ul li .content .info .title {
+  font-weight: 600;
+}
+.card2 .body-custom .user {
+  color: #707070;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px 10px 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.card2 .body-custom .user ul {
+  margin: 0;
+  padding: 0;
+}
+.card2 .body-custom .user ul li {
+  list-style: none;
+  width: 100%;
+  height: 65px;
+}
+.card2 .body-custom .user ul li .content {
+  display: flex;
+  align-items: center;
+}
+.card2 .body-custom .user ul li .content img {
+  margin-right: 10px;
+}
+.card2 .body-custom .user ul li .content .profile {
+  font-family: "Oswald", sans-serif;
+}
+.card2 .body-custom .user ul li .content .profile .name {
+  font-weight: 600;
+}
+.card2 .body-custom .user ul li .content .profile .type {
+  font-size: 13px;
+}
+.card2 .footer {
+  font-family: "Boogaloo", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background: #f6f5ff;
+  height: 80px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (max-width: 768px) {
+  .card2 .footer {
+    flex-direction: column;
+  }
+}
+.card2 .footer .number_count {
+  color: #707070;
+}
+.card2 .footer .pagination nav ul {
+  margin-bottom: 0;
+}
+.card2 .footer .pagination nav ul a {
+  color: #695CFE;
+} */
